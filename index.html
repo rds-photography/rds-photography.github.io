@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Photographs by Richard Saunders</title>
+  </head>
+
+  <style>
+  img {
+    width: 100%;
+    height: auto;
+  }
+  body {
+    background: #fff;
+    color: #272727;
+    padding-top: 4em;
+    margin: 0;
+    font-family: Garamond, serif;
+    font-size: 1em;
+    line-height: 1.6;
+  }
+
+h1, h2, h3 {
+  font-family: "Gill Sans", sans-serif;
+
+}
+  * {
+    box-sizing: border-box;
+  }
+  .container {
+    max-width: 62.5em;
+    margin: 0 auto;
+  }
+
+  .site {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+    align-items: center;
+    text-align: center;
+  }
+  .site__title {
+    margin-bottom: 0;
+  }
+
+  .site__description {
+    display: block;
+    max-width: 60%;
+    min-width: 17.5em;
+  }
+
+  .site__logo {
+    width: 6em;
+    height: 6em;
+    min-width: 4em;
+    border-radius: 2em;
+  }
+
+  .site__logo-image {
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%););
+  }
+
+  .item {
+    background: #eeedea;
+    padding: 0 0 1.5em;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+  }
+
+  .item__title {
+    text-transform: uppercase;
+  }
+
+  .item__content {
+    padding: 0 1em;
+  }
+
+  hr {border: 2px solid #ebebeb; width: 100%;}
+
+  .item__link {
+    text-decoration: none;
+    color: #272727;
+  }
+
+  .item__date {
+    color: #8c8c8c;
+    display: block;
+    padding: 1em 0 0.5em;
+    text-transform: uppercase;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-auto-rows: 1fr;
+    grid-gap: 1em;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  .grid__item {
+    padding: 1em;
+  }
+
+  footer {
+    text-align: center;
+    padding: 2em 0;
+  }
+  </style>
+  <body>
+    <main class="container">
+
+    <header class="site">
+      <div class="site__logo">
+        <img class="site__logo-image" src="https://pbs.twimg.com/profile_images/478811439218839552/Wms2OIlA_200x200.jpeg" />
+      </div>
+      <h1 class="site__title">Richard Saunders</h1>
+      <p class="site__description">Proin convallis rutrum ante, molestie posuere nunc mattis non. Proin luctus arcu quis mauris pulvinar, eget dapibus risus lacinia. </p>
+    </header>
+
+    <ul class="grid">
+      <li>
+        <article class="item">
+          <a class="item__link" href="post.html">
+            <img src="http://via.placeholder.com/1000x600">
+            <div class="item__content">
+              <time class="item__date">January 13th, 2014</time>
+              <h2 class="item__title">Sgorr Nam Fiannaidh</h2>
+              <div class="item__stats">11 Photos, 22 Miles</div>
+            </div>
+          </a>
+        </article>
+      </li>
+
+      <li>
+        <article class="item">
+          <a class="item__link" href="post.html">
+            <img src="http://via.placeholder.com/1000x600">
+            <div class="item__content">
+              <time class="item__date">January 3rd, 2014</time>
+              <h2 class="item__title">Fan Fawr</h2>
+              <p class="item__desc">A post Christmas walk to its illustrious cairn</p>
+              <div class="item__stats">8 Photos</div>
+            </div>
+          </a>
+        </article>
+      </li>
+
+      <li>
+        <article class="item">
+          <a class="item__link" href="post.html">
+            <img src="http://via.placeholder.com/1000x600">
+            <div class="item__content">
+              <time class="item__date">December 29th, 2013</time>
+              <h2 class="item__title">Breacon Beacons Horseshoe +</h2>
+              <p class="item__desc">A 22km walk from the Neuadd Reservoirs, taking in the summits of Corn Du, Pen y Fan, Cribyn, Fan y Big and Bwlch y Ddwyallt</p>
+              <div class="item__stats">11 Photos</div>
+            </div>
+          </a>
+        </article>
+      </li>
+
+      <li>
+        <article class="item">
+          <a class="item__link" href="post.html">
+            <img src="http://via.placeholder.com/1000x600">
+            <time class="item__date">December 25th, 2013</time>
+            <div class="item__content">
+              <h2 class="item__title">Christmas Day 2013</h2>
+              <p class="item__desc">Pen Y Fan, Brecon Beacons</p>
+              <div class="item__stats">15 Photos</div>
+            </div>
+          </a>
+        </article>
+      </li>
+    </ul>
+  </main>
+
+  <footer><small>&copy; 2017, Richard Saunders</small></footer>
+
+  </body>
+</html>
