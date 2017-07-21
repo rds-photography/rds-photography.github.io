@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Photographs by Richard Saunders</title>
+  </head>
+
+  <style>
+  img {
+    width: 100%;
+    height: auto;
+  }
+  body {
+    background: #fff;
+    color: #272727;
+    padding-top: 4em;
+    margin: 0;
+    font-family: Garamond, serif;
+    font-size: 1em;
+    line-height: 1.6;
+  }
+
+h1, h2, h3 {
+  font-family: "Gill Sans", sans-serif;
+
+}
+  * {
+    box-sizing: border-box;
+  }
+  .container {
+    max-width: 62.5em;
+    margin: 0 auto;
+  }
+
+  .site {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+    align-items: center;
+    text-align: center;
+  }
+  .site__title {
+    margin-bottom: 0;
+  }
+
+  .site__description {
+    display: block;
+    max-width: 60%;
+    min-width: 17.5em;
+  }
+
+  .site__logo {
+    width: 6em;
+    height: 6em;
+    min-width: 4em;
+    border-radius: 2em;
+  }
+
+  .site__logo-image {
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%););
+  }
+
+  .item {
+    background: #eeedea;
+    padding: 0 0 1.5em;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+  }
+
+  .item__title {
+    text-transform: uppercase;
+  }
+
+  .item__content {
+    padding: 0 1em;
+  }
+
+  hr {border: 2px solid #ebebeb; width: 100%;}
+
+  .item__link {
+    text-decoration: none;
+    color: #272727;
+  }
+
+  .item__date {
+    color: #8c8c8c;
+    display: block;
+    padding: 1em 0 0.5em;
+    text-transform: uppercase;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-auto-rows: 1fr;
+    grid-gap: 1em;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  .grid__item {
+    padding: 1em;
+  }
+
+
+  .photo-grid {
+    display: grid;
+    grid-gap: 1em;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    grid-template-columns: minmax(320px, 1fr);
+    align-items: center;
+  }
+
+  .photo-grid--2 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .photo-grid--3 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .photo-grid--4 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .photo-grid--wide {
+    width: 80vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -40vw;
+    margin-right: -40vw;
+  }
+
+  .photo-grid--full {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+  }
+
+  footer {
+    text-align: center;
+    padding: 2em 0;
+  }
+
+  .post {
+    text-align: center;
+  }
+
+  .post p {
+    margin: 0 auto;
+    max-width: 80%;
+    margin-bottom: 1.5em;
+  }
+  </style>
+  <body>
+    <main class="container">
+
+    <header class="site">
+      <div class="site__logo">
+        <img class="site__logo-image" src="https://pbs.twimg.com/profile_images/478811439218839552/Wms2OIlA_200x200.jpeg" />
+      </div>
+      <h1 class="site__title">Richard Saunders</h1>
+      <p class="site__description">Proin convallis rutrum ante, molestie posuere nunc mattis non. Proin luctus arcu quis mauris pulvinar, eget dapibus risus lacinia. </p>
+    </header>
+
+    <article class="post">
+      <a class="item__link" href="post.html">
+        <img src="http://via.placeholder.com/1000x600">
+        <div class="item__content">
+          <time class="item__date">January 13th, 2014</time>
+          <h2 class="item__title">Sgorr Nam Fiannaidh</h2>
+          <div class="item__stats">11 Photos, 22 Miles</div>
+        </div>
+      </a>
+
+      <h2>Photo grid one</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas consectetur auctor eros, non molestie justo gravida at. Aliquam erat volutpat. Praesent in augue viverra, luctus sem et, aliquet nisi. Nunc a volutpat dolor. Fusce convallis maximus ligula non accumsan. In fermentum leo nunc, id facilisis urna dictum ac. Etiam et ligula vitae nisl sollicitudin faucibus eu non quam.</p>
+      <ul class="photo-grid photo-grid--wide">
+        <li><img src="http://via.placeholder.com/1000x600"></li>
+      </ul>
+
+      <h2>Photo grid two</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas consectetur auctor eros, non molestie justo gravida at. Aliquam erat volutpat. Praesent in augue viverra, luctus sem et, aliquet nisi. Nunc a volutpat dolor. Fusce convallis maximus ligula non accumsan. In fermentum leo nunc, id facilisis urna dictum ac. Etiam et ligula vitae nisl sollicitudin faucibus eu non quam.</p>
+
+      <p> Nam at sem sed nisi fringilla iaculis. Integer vitae felis sollicitudin felis malesuada condimentum. Proin suscipit mauris nec lobortis vulputate. Vivamus imperdiet nulla congue velit ultricies, ac hendrerit tellus aliquam.
+      Pellentesque tristique arcu id efficitur varius. Donec at porta dui. Etiam neque leo, ullamcorper nec cursus vel, gravida quis sem. Nam laoreet eleifend odio, sit amet volutpat neque condimentum nec. Praesent efficitur nisi eu lectus tincidunt convallis.</p>
+      <ul class="photo-grid photo-grid--2">
+        <li><img src="http://via.placeholder.com/1000x600"></li>
+        <li><img src="http://via.placeholder.com/1000x600"></li>
+      </ul>
+
+      <h2>Photo grid three</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas consectetur auctor eros, non molestie justo gravida at. Aliquam erat volutpat. Praesent in augue viverra, luctus sem et, aliquet nisi. Nunc a volutpat dolor. Fusce convallis maximus ligula non accumsan. In fermentum leo nunc, id facilisis urna dictum ac. Etiam et ligula vitae nisl sollicitudin faucibus eu non quam.</p>
+
+      <p> Nam at sem sed nisi fringilla iaculis. Integer vitae felis sollicitudin felis malesuada condimentum. Proin suscipit mauris nec lobortis vulputate. Vivamus imperdiet nulla congue velit ultricies, ac hendrerit tellus aliquam.
+      Pellentesque tristique arcu id efficitur varius. Donec at porta dui. Etiam neque leo, ullamcorper nec cursus vel, gravida quis sem. Nam laoreet eleifend odio, sit amet volutpat neque condimentum nec. Praesent efficitur nisi eu lectus tincidunt convallis.</p>
+      <ul class="photo-grid photo-grid--3">
+        <li><img src="http://via.placeholder.com/800x1200"></li>
+        <li><img src="http://via.placeholder.com/800x1200"></li>
+        <li><img src="http://via.placeholder.com/800x1200"></li>
+      </ul>
+
+      <h2>Photo grid four</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas consectetur auctor eros, non molestie justo gravida at. Aliquam erat volutpat. Praesent in augue viverra, luctus sem et, aliquet nisi. Nunc a volutpat dolor. Fusce convallis maximus ligula non accumsan. In fermentum leo nunc, id facilisis urna dictum ac. Etiam et ligula vitae nisl sollicitudin faucibus eu non quam.</p>
+
+      <p> Nam at sem sed nisi fringilla iaculis. Integer vitae felis sollicitudin felis malesuada condimentum. Proin suscipit mauris nec lobortis vulputate. Vivamus imperdiet nulla congue velit ultricies, ac hendrerit tellus aliquam.
+      Pellentesque tristique arcu id efficitur varius. Donec at porta dui. Etiam neque leo, ullamcorper nec cursus vel, gravida quis sem. Nam laoreet eleifend odio, sit amet volutpat neque condimentum nec. Praesent efficitur nisi eu lectus tincidunt convallis.</p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas consectetur auctor eros, non molestie justo gravida at. Aliquam erat volutpat. Praesent in augue viverra, luctus sem et, aliquet nisi. Nunc a volutpat dolor. Fusce convallis maximus ligula non accumsan. In fermentum leo nunc, id facilisis urna dictum ac. Etiam et ligula vitae nisl sollicitudin faucibus eu non quam.</p>
+
+      <p> Nam at sem sed nisi fringilla iaculis. Integer vitae felis sollicitudin felis malesuada condimentum. Proin suscipit mauris nec lobortis vulputate. Vivamus imperdiet nulla congue velit ultricies, ac hendrerit tellus aliquam.
+      Pellentesque tristique arcu id efficitur varius. Donec at porta dui. Etiam neque leo, ullamcorper nec cursus vel, gravida quis sem. Nam laoreet eleifend odio, sit amet volutpat neque condimentum nec. Praesent efficitur nisi eu lectus tincidunt convallis.</p>
+      <ul class="photo-grid photo-grid--4 photo-grid--full">
+        <li><img src="http://via.placeholder.com/1000x600"></li>
+        <li><img src="http://via.placeholder.com/1000x600"></li>
+        <li><img src="http://via.placeholder.com/1000x600"></li>
+        <li><img src="http://via.placeholder.com/1000x600"></li>
+      </ul>
+
+    </article>
+
+  </main>
+
+  <footer><small>&copy; 2017, Richard Saunders</small></footer>
+
+  </body>
+</html>
